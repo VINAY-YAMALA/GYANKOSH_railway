@@ -1,0 +1,81 @@
+/* Ensure full height for html and body */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Container styling for padding and center alignment */
+.hq-container {
+  text-align: center; /* Centers the text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styling */
+.hq-header {
+  font-size: 22px;
+  font-weight: 500;
+  color: #ffffff; /* White text color for contrast */
+  text-align: center;
+  width: 100vw;
+  padding: 15px 20px;
+  background-color: #2c2c2c; /* Dark color for the header background */
+  border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Background image container */
+.back1 {
+  background-image: url("./images/train2.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;  /* Ensure the background takes up full height */
+  width: 100vw;
+  position: relative; /* Fix positioning for the image */
+}
+
+/* Unordered list styling */
+.hq-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px; /* Restrict the max-width of the list */
+  margin: 0 auto;
+}
+
+/* List item styling */
+.hq-item {
+  margin: 10px 0;
+}
+
+/* Link styling for the individual instructions */
+.hq-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px; /* Limit width for each item */
+  text-align: center; /* Centers the text inside the button */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the link */
+.hq-link:hover {
+  background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .hq-link {
+      max-width: 100%;
+  }
+}
